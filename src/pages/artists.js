@@ -3,11 +3,15 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 
 const ArtistsPage = ({data: {allWpArtist: {edges}}}) => {
+
   return (
-    <Layout pageTitle="Artists of Inghelbrecht Agency">
+    <Layout pageTitle="Artists of Camps Agency">
+     
       {edges.map((item) => {
-        const artist = item.node.artistMeta;
-        return <p key={item.node.id}>{artist.firstName} {artist.lastName}</p>
+
+        const {firstName, lastName} = item.node.artistMeta;
+        return <p key={item.node.id}>{firstName} {lastName}</p>
+
       })}
     </Layout>
   )
@@ -28,7 +32,6 @@ export const query = graphql`
     }
   }
 }
-
 `
 
 export default ArtistsPage

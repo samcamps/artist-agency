@@ -4,10 +4,10 @@ import Layout from '../components/layout'
 
 const IndexPage = () => {
   return (
-      <Layout pageTitle="Welcome to Camps Agency!">
+    <Layout pageTitle="Welcome to Camps Agency!">
       <p>Lorem ipsum2</p>
       <StaticImage src="../images/aloha.jpg" alt="griet met paard" />
-      </Layout>
+    </Layout>
   )
 }
 

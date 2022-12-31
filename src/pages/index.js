@@ -46,10 +46,7 @@ const IndexPage = ({
 
       <section className={section}>
         <h2 className={subtitle}>Featured Artists</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed doo eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <div dangerouslySetInnerHTML={{ __html: homeFields.description }} />
         <div className={artists}>
           {homeFields.artists.map(artist => {
 

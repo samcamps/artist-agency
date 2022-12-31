@@ -9,7 +9,7 @@ const ArtistPage = ({ data: { wpArtist: { artistMeta: artist } } }) => {
 
 
   return (
-    <Layout pageTitle="Artiesten Template">
+    <Layout >
       <div>
         <GatsbyImage image={image} alt={artist.profilePicture.altText} />
         <h3>{artist.artistName}</h3>

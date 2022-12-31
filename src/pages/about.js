@@ -6,7 +6,7 @@ const AboutPage = () => {
     
     return (
 
-        <Layout pageTitle="About Us">
+        <Layout >
 
             <Link to="/">Back to Home</Link>
 

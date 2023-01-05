@@ -69,9 +69,6 @@ const ContactPage = ({
                 />
             </section>
 
-
-            // section met className "header"
-
             <section className={form}>
                 <form name="contact" method="POST" data-netlify="true">
                     <label>Your Name:</label>
